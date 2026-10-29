@@ -1,0 +1,31 @@
+{
+  "grammars": [
+    {
+      "name": "lispex",
+      "camelcase": "Lispex",
+      "scope": "source.lispex",
+      "path": ".",
+      "file-types": [
+        "lspx"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injections": "queries/injections.scm",
+      "locals": "queries/locals.scm",
+      "indents": "queries/indents.scm"
+    }
+  ],
+  "metadata": {
+    "version": "1.21.0",
+    "license": "Apache-2.0",
+    "description": "Tree-sitter grammar and editor queries for Lispex 1.21."
+  },
+  "bindings": {
+    "c": true,
+    "go": false,
+    "node": true,
+    "python": false,
+    "rust": true,
+    "swift": false,
+    "zig": false
+  }
+}

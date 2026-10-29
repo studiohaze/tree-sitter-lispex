@@ -1,0 +1,318 @@
+[
+  {
+    "type": "bytevector",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "byte",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "datum",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "bytevector",
+          "named": true
+        },
+        {
+          "type": "character",
+          "named": true
+        },
+        {
+          "type": "character_end",
+          "named": true
+        },
+        {
+          "type": "dotted_list",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "list",
+          "named": true
+        },
+        {
+          "type": "quasiquote",
+          "named": true
+        },
+        {
+          "type": "quote",
+          "named": true
+        },
+        {
+          "type": "rational",
+          "named": true
+        },
+        {
+          "type": "real",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        },
+        {
+          "type": "unquote",
+          "named": true
+        },
+        {
+          "type": "unquote_splicing",
+          "named": true
+        },
+        {
+          "type": "vector",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dotted_list",
+    "named": true,
+    "fields": {
+      "head": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "datum",
+            "named": true
+          }
+        ]
+      },
+      "tail": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "datum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "datum",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "quasiquote",
+    "named": true,
+    "fields": {
+      "datum": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "datum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "quote",
+    "named": true,
+    "fields": {
+      "datum": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "datum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "datum",
+          "named": true
+        },
+        {
+          "type": "forbidden_reader_extension",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unquote",
+    "named": true,
+    "fields": {
+      "datum": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "datum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "unquote_splicing",
+    "named": true,
+    "fields": {
+      "datum": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "datum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "vector",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "datum",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "#(",
+    "named": false
+  },
+  {
+    "type": "#u8(",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": ",@",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "`",
+    "named": false
+  },
+  {
+    "type": "block_comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "boolean",
+    "named": true
+  },
+  {
+    "type": "byte",
+    "named": true
+  },
+  {
+    "type": "character",
+    "named": true
+  },
+  {
+    "type": "character_end",
+    "named": true
+  },
+  {
+    "type": "forbidden_reader_extension",
+    "named": true
+  },
+  {
+    "type": "integer",
+    "named": true
+  },
+  {
+    "type": "line_comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "rational",
+    "named": true
+  },
+  {
+    "type": "real",
+    "named": true
+  },
+  {
+    "type": "string",
+    "named": true
+  },
+  {
+    "type": "symbol",
+    "named": true
+  }
+]

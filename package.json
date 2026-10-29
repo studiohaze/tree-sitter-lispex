@@ -1,0 +1,69 @@
+{
+  "name": "tree-sitter-lispex",
+  "version": "1.21.0",
+  "description": "Tree-sitter grammar and editor queries for Lispex 1.21.",
+  "license": "Apache-2.0",
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE",
+    "binding.gyp",
+    "bindings/node/**",
+    "grammar.js",
+    "queries/**",
+    "src/**",
+    "tree-sitter.json"
+  ],
+  "scripts": {
+    "install": "node-gyp-build",
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "test:node": "node scripts/test-node-binding.mjs",
+    "test:queries": "node scripts/check-queries.mjs",
+    "test:scanner": "node scripts/test-scanner-boundaries.mjs",
+    "parse:acceptance": "node scripts/parse-acceptance.mjs",
+    "package:audit": "node scripts/package-audit.mjs",
+    "prepack": "tree-sitter generate"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.5.0",
+    "node-gyp-build": "^4.8.4"
+  },
+  "devDependencies": {
+    "tree-sitter": "0.25.0",
+    "tree-sitter-cli": "0.25.10"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.25.0"
+  },
+  "peerDependenciesMeta": {
+    "tree-sitter": {
+      "optional": true
+    }
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.lispex",
+      "file-types": [
+        "lspx"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injections": "queries/injections.scm",
+      "locals": "queries/locals.scm",
+      "indents": "queries/indents.scm"
+    }
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "tree-sitter",
+    "lispex",
+    "grammar",
+    "syntax-highlighting"
+  ],
+  "type": "commonjs",
+  "homepage": "https://www.lispex.com"
+}
